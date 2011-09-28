@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F418D4251433607D00E51633 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F418D4241433607D00E51633 /* UIKit.framework */; };
+		F418D4271433607D00E51633 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F418D4261433607D00E51633 /* Foundation.framework */; };
+		F418D4291433607D00E51633 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F418D4281433607D00E51633 /* CoreGraphics.framework */; };
+		F418D42F1433607D00E51633 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F418D42D1433607D00E51633 /* InfoPlist.strings */; };
+		F418D4311433607D00E51633 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F418D4301433607D00E51633 /* main.m */; };
+		F418D4351433607D00E51633 /* SGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F418D4341433607D00E51633 /* SGAppDelegate.m */; };
+		F418D4381433607D00E51633 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F418D4361433607D00E51633 /* MainStoryboard.storyboard */; };
+		F418D43B1433607D00E51633 /* SGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F418D43A1433607D00E51633 /* SGViewController.m */; };
+		F418D443143362C600E51633 /* SGDirWatchdog.m in Sources */ = {isa = PBXBuildFile; fileRef = F418D442143362C600E51633 /* SGDirWatchdog.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F418D4201433607D00E51633 /* DirectoryWatchdog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DirectoryWatchdog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F418D4241433607D00E51633 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F418D4261433607D00E51633 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F418D4281433607D00E51633 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F418D42C1433607D00E51633 /* DirectoryWatchdog-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DirectoryWatchdog-Info.plist"; sourceTree = "<group>"; };
+		F418D42E1433607D00E51633 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F418D4301433607D00E51633 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F418D4321433607D00E51633 /* DirectoryWatchdog-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DirectoryWatchdog-Prefix.pch"; sourceTree = "<group>"; };
+		F418D4331433607D00E51633 /* SGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGAppDelegate.h; sourceTree = "<group>"; };
+		F418D4341433607D00E51633 /* SGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGAppDelegate.m; sourceTree = "<group>"; };
+		F418D4371433607D00E51633 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		F418D4391433607D00E51633 /* SGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGViewController.h; sourceTree = "<group>"; };
+		F418D43A1433607D00E51633 /* SGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGViewController.m; sourceTree = "<group>"; };
+		F418D441143362C600E51633 /* SGDirWatchdog.h */ = {isa = PBXFileReference; fileEncoding = 4; path = SGDirWatchdog.h; sourceTree = "<group>"; };
+		F418D442143362C600E51633 /* SGDirWatchdog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGDirWatchdog.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F418D41D1433607D00E51633 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F418D4251433607D00E51633 /* UIKit.framework in Frameworks */,
+				F418D4271433607D00E51633 /* Foundation.framework in Frameworks */,
+				F418D4291433607D00E51633 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F418D4151433607D00E51633 = {
+			isa = PBXGroup;
+			children = (
+				F418D42A1433607D00E51633 /* DirectoryObserver */,
+				F418D4231433607D00E51633 /* Frameworks */,
+				F418D4211433607D00E51633 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F418D4211433607D00E51633 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F418D4201433607D00E51633 /* DirectoryWatchdog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F418D4231433607D00E51633 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F418D4241433607D00E51633 /* UIKit.framework */,
+				F418D4261433607D00E51633 /* Foundation.framework */,
+				F418D4281433607D00E51633 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F418D42A1433607D00E51633 /* DirectoryObserver */ = {
+			isa = PBXGroup;
+			children = (
+				F418D4331433607D00E51633 /* SGAppDelegate.h */,
+				F418D4341433607D00E51633 /* SGAppDelegate.m */,
+				F418D4361433607D00E51633 /* MainStoryboard.storyboard */,
+				F418D4391433607D00E51633 /* SGViewController.h */,
+				F418D43A1433607D00E51633 /* SGViewController.m */,
+				F418D42B1433607D00E51633 /* Supporting Files */,
+				F418D441143362C600E51633 /* SGDirWatchdog.h */,
+				F418D442143362C600E51633 /* SGDirWatchdog.m */,
+			);
+			path = DirectoryObserver;
+			sourceTree = "<group>";
+		};
+		F418D42B1433607D00E51633 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F418D42C1433607D00E51633 /* DirectoryWatchdog-Info.plist */,
+				F418D42D1433607D00E51633 /* InfoPlist.strings */,
+				F418D4301433607D00E51633 /* main.m */,
+				F418D4321433607D00E51633 /* DirectoryWatchdog-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F418D41F1433607D00E51633 /* DirectoryWatchdog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F418D43E1433607D00E51633 /* Build configuration list for PBXNativeTarget "DirectoryWatchdog" */;
+			buildPhases = (
+				F418D41C1433607D00E51633 /* Sources */,
+				F418D41D1433607D00E51633 /* Frameworks */,
+				F418D41E1433607D00E51633 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DirectoryWatchdog;
+			productName = DirectoryObserver;
+			productReference = F418D4201433607D00E51633 /* DirectoryWatchdog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F418D4171433607D00E51633 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Cyber:con GmbH";
+			};
+			buildConfigurationList = F418D41A1433607D00E51633 /* Build configuration list for PBXProject "DirectoryWatchdog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F418D4151433607D00E51633;
+			productRefGroup = F418D4211433607D00E51633 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F418D41F1433607D00E51633 /* DirectoryWatchdog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F418D41E1433607D00E51633 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F418D42F1433607D00E51633 /* InfoPlist.strings in Resources */,
+				F418D4381433607D00E51633 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F418D41C1433607D00E51633 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F418D4311433607D00E51633 /* main.m in Sources */,
+				F418D4351433607D00E51633 /* SGAppDelegate.m in Sources */,
+				F418D43B1433607D00E51633 /* SGViewController.m in Sources */,
+				F418D443143362C600E51633 /* SGDirWatchdog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F418D42D1433607D00E51633 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F418D42E1433607D00E51633 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F418D4361433607D00E51633 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F418D4371433607D00E51633 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F418D43C1433607D00E51633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F418D43D1433607D00E51633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F418D43F1433607D00E51633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DirectoryObserver/DirectoryWatchdog-Prefix.pch";
+				INFOPLIST_FILE = "DirectoryObserver/DirectoryWatchdog-Info.plist";
+				PRODUCT_NAME = DirectoryWatchdog;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F418D4401433607D00E51633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DirectoryObserver/DirectoryWatchdog-Prefix.pch";
+				INFOPLIST_FILE = "DirectoryObserver/DirectoryWatchdog-Info.plist";
+				PRODUCT_NAME = DirectoryWatchdog;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F418D41A1433607D00E51633 /* Build configuration list for PBXProject "DirectoryWatchdog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F418D43C1433607D00E51633 /* Debug */,
+				F418D43D1433607D00E51633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F418D43E1433607D00E51633 /* Build configuration list for PBXNativeTarget "DirectoryWatchdog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F418D43F1433607D00E51633 /* Debug */,
+				F418D4401433607D00E51633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F418D4171433607D00E51633 /* Project object */;
+}
