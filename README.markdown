@@ -1,5 +1,5 @@
 # Description #
-DirectoryWatchdog is a simple utility class to mointor changes in local folders. Most common use is the monitoring of an applications documents direcory in combination with iTunes file sharing support. This code uses the BSD kqueue API and should work on OSX as well as iOS.
+DirectoryWatchdog is a simple utility tool to mointor changes in local folders. Most common use is the monitoring of an applications documents direcory in combination with iTunes file sharing support. This code uses the BSD kqueue API and should work on OSX as well as iOS.
 
 In the code I use blocks for the callback, so it requires iOS 4 or higher (or OSX 10.6 or newer). You should be able to rewrite it to a delegate pattern, if you want to target older versions
 

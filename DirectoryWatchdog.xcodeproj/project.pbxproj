@@ -32,7 +32,7 @@
 		F418D4371433607D00E51633 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		F418D4391433607D00E51633 /* SGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGViewController.h; sourceTree = "<group>"; };
 		F418D43A1433607D00E51633 /* SGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGViewController.m; sourceTree = "<group>"; };
-		F418D441143362C600E51633 /* SGDirWatchdog.h */ = {isa = PBXFileReference; fileEncoding = 4; path = SGDirWatchdog.h; sourceTree = "<group>"; };
+		F418D441143362C600E51633 /* SGDirWatchdog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDirWatchdog.h; sourceTree = "<group>"; };
 		F418D442143362C600E51633 /* SGDirWatchdog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGDirWatchdog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,7 +53,7 @@
 		F418D4151433607D00E51633 = {
 			isa = PBXGroup;
 			children = (
-				F418D42A1433607D00E51633 /* DirectoryObserver */,
+				F418D42A1433607D00E51633 /* DirectoryWatchdog */,
 				F418D4231433607D00E51633 /* Frameworks */,
 				F418D4211433607D00E51633 /* Products */,
 			);
@@ -77,7 +77,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F418D42A1433607D00E51633 /* DirectoryObserver */ = {
+		F418D42A1433607D00E51633 /* DirectoryWatchdog */ = {
 			isa = PBXGroup;
 			children = (
 				F418D4331433607D00E51633 /* SGAppDelegate.h */,
@@ -89,7 +89,7 @@
 				F418D441143362C600E51633 /* SGDirWatchdog.h */,
 				F418D442143362C600E51633 /* SGDirWatchdog.m */,
 			);
-			path = DirectoryObserver;
+			path = DirectoryWatchdog;
 			sourceTree = "<group>";
 		};
 		F418D42B1433607D00E51633 /* Supporting Files */ = {
@@ -242,8 +242,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DirectoryObserver/DirectoryWatchdog-Prefix.pch";
-				INFOPLIST_FILE = "DirectoryObserver/DirectoryWatchdog-Info.plist";
+				GCC_PREFIX_HEADER = "DirectoryWatchdog/DirectoryWatchdog-Prefix.pch";
+				INFOPLIST_FILE = "DirectoryWatchdog/DirectoryWatchdog-Info.plist";
 				PRODUCT_NAME = DirectoryWatchdog;
 				WRAPPER_EXTENSION = app;
 			};
@@ -253,8 +253,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DirectoryObserver/DirectoryWatchdog-Prefix.pch";
-				INFOPLIST_FILE = "DirectoryObserver/DirectoryWatchdog-Info.plist";
+				GCC_PREFIX_HEADER = "DirectoryWatchdog/DirectoryWatchdog-Prefix.pch";
+				INFOPLIST_FILE = "DirectoryWatchdog/DirectoryWatchdog-Info.plist";
 				PRODUCT_NAME = DirectoryWatchdog;
 				WRAPPER_EXTENSION = app;
 			};
