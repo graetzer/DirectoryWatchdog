@@ -15,6 +15,4 @@
 
 @property (strong, nonatomic) NSArray *files;
 
-+ (NSString *)documentsPath;
-
 @end

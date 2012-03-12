@@ -22,16 +22,6 @@
     [observer release];
 }
 
-+ (NSString *)documentsPath
-{
-#ifdef DEBUG
-	NSLog(@"%s", __FUNCTION__);
-#endif
-    
-	NSArray *documentsPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    
-	return [documentsPaths objectAtIndex:0]; // Path to the application's "Documents" directory
-}
 
 #pragma mark - View lifecycle
 
@@ -39,12 +29,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.files = [[NSFileManager defaultManager]contentsOfDirectoryAtPath:[SGViewController documentsPath] error:NULL];
+    self.files = [[NSFileManager defaultManager]contentsOfDirectoryAtPath:[SGDirWatchdog documentsPath] error:NULL];
     
-    observer = [[SGDirWatchdog alloc]initWithPath:[SGViewController documentsPath]  update:^{
-        self.files = [[NSFileManager defaultManager]contentsOfDirectoryAtPath:[SGViewController documentsPath] error:NULL];
+    observer = [SGDirWatchdog watchtdogOnDocumentsDir:^{
+        self.files = [[NSFileManager defaultManager]contentsOfDirectoryAtPath:[SGDirWatchdog documentsPath] error:NULL];
         [self.tableView reloadData];
     }];
+    [observer retain];//watchtdogOnDocumentsDir: returns autoreleased object
     
     [observer start];
 }

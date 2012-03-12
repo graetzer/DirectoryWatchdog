@@ -80,14 +80,13 @@
 		F418D42A1433607D00E51633 /* DirectoryWatchdog */ = {
 			isa = PBXGroup;
 			children = (
+				F442B96B150EAC2100D00B53 /* lib */,
 				F418D4331433607D00E51633 /* SGAppDelegate.h */,
 				F418D4341433607D00E51633 /* SGAppDelegate.m */,
 				F418D4361433607D00E51633 /* MainStoryboard.storyboard */,
 				F418D4391433607D00E51633 /* SGViewController.h */,
 				F418D43A1433607D00E51633 /* SGViewController.m */,
 				F418D42B1433607D00E51633 /* Supporting Files */,
-				F418D441143362C600E51633 /* SGDirWatchdog.h */,
-				F418D442143362C600E51633 /* SGDirWatchdog.m */,
 			);
 			path = DirectoryWatchdog;
 			sourceTree = "<group>";
@@ -101,6 +100,15 @@
 				F418D4321433607D00E51633 /* DirectoryWatchdog-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F442B96B150EAC2100D00B53 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				F418D441143362C600E51633 /* SGDirWatchdog.h */,
+				F418D442143362C600E51633 /* SGDirWatchdog.m */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
