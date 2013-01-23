@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F416190516B0349300EA6BD7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F416190416B0349300EA6BD7 /* Default-568h@2x.png */; };
+		F416190D16B0373A00EA6BD7 /* SGDirWatchdog.m in Sources */ = {isa = PBXBuildFile; fileRef = F416190C16B0373A00EA6BD7 /* SGDirWatchdog.m */; };
 		F418D4251433607D00E51633 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F418D4241433607D00E51633 /* UIKit.framework */; };
 		F418D4271433607D00E51633 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F418D4261433607D00E51633 /* Foundation.framework */; };
 		F418D4291433607D00E51633 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F418D4281433607D00E51633 /* CoreGraphics.framework */; };
@@ -15,10 +17,12 @@
 		F418D4351433607D00E51633 /* SGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F418D4341433607D00E51633 /* SGAppDelegate.m */; };
 		F418D4381433607D00E51633 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F418D4361433607D00E51633 /* MainStoryboard.storyboard */; };
 		F418D43B1433607D00E51633 /* SGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F418D43A1433607D00E51633 /* SGViewController.m */; };
-		F418D443143362C600E51633 /* SGDirWatchdog.m in Sources */ = {isa = PBXBuildFile; fileRef = F418D442143362C600E51633 /* SGDirWatchdog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F416190416B0349300EA6BD7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F416190B16B0373A00EA6BD7 /* SGDirWatchdog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SGDirWatchdog.h; path = ../SGDirWatchdog.h; sourceTree = "<group>"; };
+		F416190C16B0373A00EA6BD7 /* SGDirWatchdog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SGDirWatchdog.m; path = ../SGDirWatchdog.m; sourceTree = "<group>"; };
 		F418D4201433607D00E51633 /* DirectoryWatchdog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DirectoryWatchdog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F418D4241433607D00E51633 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F418D4261433607D00E51633 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,8 +36,6 @@
 		F418D4371433607D00E51633 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		F418D4391433607D00E51633 /* SGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGViewController.h; sourceTree = "<group>"; };
 		F418D43A1433607D00E51633 /* SGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGViewController.m; sourceTree = "<group>"; };
-		F418D441143362C600E51633 /* SGDirWatchdog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDirWatchdog.h; sourceTree = "<group>"; };
-		F418D442143362C600E51633 /* SGDirWatchdog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGDirWatchdog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,9 @@
 		F418D4151433607D00E51633 = {
 			isa = PBXGroup;
 			children = (
+				F416190B16B0373A00EA6BD7 /* SGDirWatchdog.h */,
+				F416190C16B0373A00EA6BD7 /* SGDirWatchdog.m */,
+				F416190416B0349300EA6BD7 /* Default-568h@2x.png */,
 				F418D42A1433607D00E51633 /* DirectoryWatchdog */,
 				F418D4231433607D00E51633 /* Frameworks */,
 				F418D4211433607D00E51633 /* Products */,
@@ -80,7 +85,6 @@
 		F418D42A1433607D00E51633 /* DirectoryWatchdog */ = {
 			isa = PBXGroup;
 			children = (
-				F442B96B150EAC2100D00B53 /* lib */,
 				F418D4331433607D00E51633 /* SGAppDelegate.h */,
 				F418D4341433607D00E51633 /* SGAppDelegate.m */,
 				F418D4361433607D00E51633 /* MainStoryboard.storyboard */,
@@ -100,15 +104,6 @@
 				F418D4321433607D00E51633 /* DirectoryWatchdog-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F442B96B150EAC2100D00B53 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				F418D441143362C600E51633 /* SGDirWatchdog.h */,
-				F418D442143362C600E51633 /* SGDirWatchdog.m */,
-			);
-			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +132,7 @@
 		F418D4171433607D00E51633 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Cyber:con GmbH";
 			};
 			buildConfigurationList = F418D41A1433607D00E51633 /* Build configuration list for PBXProject "DirectoryWatchdog" */;
@@ -164,6 +159,7 @@
 			files = (
 				F418D42F1433607D00E51633 /* InfoPlist.strings in Resources */,
 				F418D4381433607D00E51633 /* MainStoryboard.storyboard in Resources */,
+				F416190516B0349300EA6BD7 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +173,7 @@
 				F418D4311433607D00E51633 /* main.m in Sources */,
 				F418D4351433607D00E51633 /* SGAppDelegate.m in Sources */,
 				F418D43B1433607D00E51633 /* SGViewController.m in Sources */,
-				F418D443143362C600E51633 /* SGDirWatchdog.m in Sources */,
+				F416190D16B0373A00EA6BD7 /* SGDirWatchdog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +245,7 @@
 		F418D43F1433607D00E51633 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DirectoryWatchdog/DirectoryWatchdog-Prefix.pch";
 				INFOPLIST_FILE = "DirectoryWatchdog/DirectoryWatchdog-Info.plist";
@@ -260,6 +257,7 @@
 		F418D4401433607D00E51633 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DirectoryWatchdog/DirectoryWatchdog-Prefix.pch";
 				INFOPLIST_FILE = "DirectoryWatchdog/DirectoryWatchdog-Info.plist";

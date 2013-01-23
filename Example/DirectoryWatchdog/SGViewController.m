@@ -18,9 +18,6 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-- (void)dealloc {
-    [observer release];
-}
 
 
 #pragma mark - View lifecycle
@@ -35,7 +32,7 @@
         self.files = [[NSFileManager defaultManager]contentsOfDirectoryAtPath:[SGDirWatchdog documentsPath] error:NULL];
         [self.tableView reloadData];
     }];
-    [observer retain];//watchtdogOnDocumentsDir: returns autoreleased object
+    //watchtdogOnDocumentsDir: returns autoreleased object
     
     [observer start];
 }
@@ -63,7 +60,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     
-    cell.textLabel.text = [self.files objectAtIndex:indexPath.row];
+    cell.textLabel.text = (self.files)[indexPath.row];
     
     return cell;
 };
