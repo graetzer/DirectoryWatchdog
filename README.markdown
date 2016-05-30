@@ -4,7 +4,7 @@ DirectoryWatchdog is a simple utility tool to mointor changes in local folders. 
 In the code I use blocks for the callback, so it requires iOS 4 or higher (or OSX 10.6 or newer). You should be able to rewrite it to a delegate pattern, if you want to target older versions
 
 # How to use in your own project #
-Just copy the SGDirWatchdog.h and SGDirWatchdog.m files into your project folder and add them to the XCode project.
+Just copy the SGDirWatchdog.h and SGDirWatchdog.m files into your project folder and add them to the Xcode project.
 Then use the class as I do in SGViewController.m
 
 # Example for those who do not have time to look at SGViewController.m #
